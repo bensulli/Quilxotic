@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<book>
+  <config>
+    <startPage>1</startPage>
+    <title>Quilxotic Example Book</title>
+    <author>Ben Sullivan</author>
+    <email>quilxotic@sulli.ca</email>
+    <website>http://www.sulli.ca/quilxotic</website>
+    <usesHP>1</usesHP>
+    <usesCash>1</usesCash>
+  </config>
+  <page>
+    <id>1</id>
+    <image>header</image>
+    <!-- If you want to use HTML tags, you need to wrap the entire CONTENT section with the "[![CDATA[" opener and "]]" closer. See below for an example. -->
+    <content><![CDATA[<b>Welcome to Quilxotic</b>, the easiest way to create your own interactive fiction novels in the vein of Choose Your Own Adventure books, with the added inclusion of optional RPG elements like health and currency.
+
+Creating your own novel is very easy. Simply create a new XML file in the Quilxotic folder of your device's primary storage. <i>Example.xml</i> is provided as an example. Do not modify this file as it is overwritten at each launch, instead duplicate it or create a new XML from scratch to make your own content!
+
+NOTE: Quilxotic is in a BETA phase at this time. While basic features have been implemented I expect some users to encounter issues, especially as the content being created becomes more complex. Please do not give a low rating if you encounter issues, instead contact me at quilxotic@sulli.ca and attach your content.xml file so I can debug and push an update! Thanks for your consideration!
+
+Quilxotic uses a simple XML-based page system. The content.xml file contains a series of pages, each of which have several attributes. Please see the documentation at http://www.sulli.ca/quilxotic for details on creating your own book!
+
+If you run into any problems, visit http://www.sulli.ca/quilxotic for more information, or contact me at quilxotic@sulli.ca! I hope you enjoy this application!]]></content>
+    <choice1>This is where your first choice will go!</choice1>
+    <choice1Result>2</choice1Result>
+    <choice2>This is where your second choice will go!</choice2>
+    <choice2Result>2</choice2Result>
+    <choice3>This is where your optional third choice will go!</choice3>
+    <choice3Result>2</choice3Result>
+    <hp>0</hp>
+    <cash>0</cash>
+    <deathMessage>This is the first page, so it's pretty unlikely the player will have died here.</deathMessage>
+    <vo>voiceover</vo>
+    <music>bgmusic</music>
+  </page>
+  <page>
+    <id>2</id>
+    <image>header</image>
+    <content>...</content>
+    <choice1>...</choice1>
+    <choice1Result>2</choice1Result>
+    <choice2>...</choice2>
+    <choice2Result>2</choice2Result>
+    <choice3>...</choice3>
+    <choice3Result>2</choice3Result>
+    <hp>0</hp>
+    <cash>-99</cash>
+    <deathMessage>...</deathMessage>
+  </page>
+</book>

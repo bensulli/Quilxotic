@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Quilxotic</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <color name="bg_offwhite">#F0FFFE</color>
+    <color name="disabled_text">#A6A6A6</color>
+    <color name="error">#FF0000</color>
+
+</resources>

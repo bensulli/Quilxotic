@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<book>
+  <config>
+    <title>Solace<!--NOT IMPLEMENTED!--></title>
+    <author>Ben Sullivan<!--NOT IMPLEMENTED!--></author>
+    <contact>ben@sulli.ca<!--NOT IMPLEMENTED!--></contact>
+    <titleImage>solace_title<!--NOT IMPLEMENTED!--></titleImage>
+    <startPage>1</startPage>
+    <usesHP>1<!--NOT IMPLEMENTED!--></usesHP>
+    <usesCash>1<!--NOT IMPLEMENTED!--></usesCash>
+    <localFolder>Quilxotic<!--NOT IMPLEMENTED!--></localFolder>
+  </config>
+  <page>
+    <id>1</id>
+    <content>The dying light of the sunset pierces your vision periodically from the slivers of horizon visible through the dense trees of the Crimson Forest. Although it is early fall, the trees are in a hurry to lose their leaves, and like a candle about to expire they shed the darkest red glow. Ahead, you see the next flickering milestone, an everburning flame held in place by a stone column, left by past generations to light the way for desperate travelers caught here at night.
+
+Thoughts of your past swim through your mind, but never crystallize into meaning. The only thing you have the energy to focus on is forward momentum. If you stop, something terrible will happen. You must reach the end of the path and seek out the Solace for... something. Resting against the stone column you try to collect your thoughts. Why are you here?</content>
+    <image>solace_title</image>
+    <choice3Result>4</choice3Result>
+    <choice2Result>3</choice2Result>
+    <choice1Result>2</choice1Result>
+    <choice3>You are gravely wounded and seek the Solace to heal you.</choice3>
+    <choice2>You seek the Solace to heal a loved one.</choice2>
+    <choice1>You entered the forest to escape the slavers.</choice1>
+    <vo>pg1</vo>
+    <music>forest</music>
+  </page>
+  <page>
+    <id>2</id>
+    <content>You hear no footsteps and the forest is absent of the slaver's shouts. You can only hope they have written you off in favor of safeguarding the other slaves from escape. Without a penny to your name and no tools or weapons, you don't expect to get very far, but another half-decade of painful servitude is a fate you can't bear. Steeling your resolve, you continue forward. It has been several weeks since rain has fallen, and the leaves beneath your feet make a terrifying crunch as you step. You grit your teeth and try not to wonder whether anyone is listening.
+
+You walk an hour until you hear a noise over the sound of your worrying. The reassuring sound of running water fills your body with energy and you quicken your pace, rushing to satisfy your thirst. Dashing through the undergrowth towards the increasing babble of water you nearly crash headline into a large tree trunk. Regaining your bearings, you hear a new noise above the water, one that shakes you to the bone - a voice. Peering around the tree trunk you see the cruelest of slavers, Syrk, and two of his men refilling canteens and grumbling.
+
+"How much could the one boy possibly be worth? Doesn't the boss value our time?" the first one, a short man who always appeared out of breath. You recall his name... Drant.
+
+"Oh he values your time alright, just for what it's worth, about a dead rat for a day's work." the other one, Kiln, responds derisively.
+
+"I work hard, I deserve at least two meals a day." he responds, a bit too sincerely.
+
+"You'll work because you owe a debt. You lost the boy and now it's up to you to find him, it's the principal of the matter." Syrk makes his point, ending the discussion. Their canteens full, they begin to head back to the path. You quickly realize this will bring them mere meters away from you. The undergrowth provides some concealment, but far from enough. You don't dare take the three fully-grown men on directly, you've had first-hand experience with their knives in the past, and you're no match for their practiced ruthlessness.
+
+Still, what choice do you have?</content>
+    <choice3Result></choice3Result>
+    <choice2Result>5</choice2Result>
+    <choice1Result>6</choice1Result>
+    <choice3></choice3>
+    <choice2>Lay low and hope they don't notice you</choice2>
+    <choice1>Try to catch them off guard and attack</choice1>
+    <image>crimson_forest</image>
+  </page>
+  <page>
+    <id>3</id>
+    <content>Each step is a painful reminder of the wounds your loved one has suffered. It's often said that those with an intimate love can sometimes feel the passing of the other, as if they were experiencing it firsthand. What if she were to die this minute? Would you feel a stabbing pain in your chest, or the sudden release of your soul into the coming night? Would that soul find its way to you here to say goodbye before fleeing, or will it wander in search of you for all eternity?
+
+You press on towards the temple you know is ahead. You've never traveled this far into the forest before, though as a boy you used to play on its outskirts, daring your friends to enter and light a twig on one of the everburning flames. Those were simpler times before the raids on the village began, just like they had nearly one hundred years before. Your forebears had the fortune of raising a hero in the village, the very hero entombed in the ruins you seek. Her name was Ashrym, and she forged the Solace from her own soul, a safeguard for the village against future offense. Unfortunately, the village was caught off guard, its heroes drawn into the war to the south. Too young to fight, but too old to stand by idly and watch your loved one perish after the attack, you set off to reach the Solace.
+
+Ahead, the trees thin into a clearing and instead of one lone milestone flame, two stand as if gating the entrance to it. You step forward, determined but cautious. You've heard tales of the ruins from other villagers who, at least they claimed, dared to enter them. Much like you've heard, the ruins are not comprised of vast columns of stone or impressive arcs of engineering. Instead you find yourself standing before a stone pathway, flanked on either side by everburning torches, leading to a stone door, partly overgrown with the surrounding trees. The naked branches reach across the door as if desperately trying to hold it shut.</content>
+    <choice3Result></choice3Result>
+    <choice2Result>8</choice2Result>
+    <choice1Result>7</choice1Result>
+    <choice3></choice3>
+    <choice2>Look around for something sharp to cut the branches from the door</choice2>
+    <choice1>Attempt to pry the branches from the door</choice1>
+    <image>forest_path</image>
+  </page>
+  <page>
+    <id>4</id>
+    <content>You fear each breath you take will be your last as you look down at the hastily bandaged wound on your shoulder. You're grateful that there is no sign of infection, but 
+
+You press on towards the temple you know is ahead. You've never traveled this far into the forest before, though as a boy you used to play on its outskirts, daring your friends to enter and light a twig on one of the everburning flames. Those were simpler times before the raids on the village began, just like they had nearly one hundred years before. Your forebears had the fortune of raising a hero in the village, the very hero entombed in the ruins you seek. Her name was Ashrym, and she forged the Solace from her own soul, a safeguard for the village against future offense. Unfortunately, the village was caught off guard, its heroes drawn into the war to the south. Too young to fight, but too old to stand by idly and watch your loved one perish after the attack, you set off to reach the Solace.
+
+Ahead, the trees thin into a clearing and instead of one lone milestone flame, two stand as if gating the entrance to it. You step forward, determined but cautious. You've heard tales of the ruins from other villagers who, at least they claimed, dared to enter them. Much like you've heard, the ruins are not comprised of vast columns of stone or impressive arcs of engineering. Instead you find yourself standing before a stone pathway, flanked on either side by torches, curiously unlit, leading to a stone door, partly overgrown with the surrounding trees. As you draw near, you can see that someone has hacked away the branches barring the door, and quite recently.
+
+The forest path continues on past the tomb entrance. You're concerned about what you might encounter in the tomb, perhaps looters are still within, but you know your wounds don't give you much time to consider your options.</content>
+    <choice3Result></choice3Result>
+    <choice2Result>10</choice2Result>
+    <choice1Result>9</choice1Result>
+    <choice3></choice3>
+    <choice2>Continue past the tomb and look for another entrance</choice2>
+    <choice1>Enter the tomb</choice1>
+    <hp>-90</hp>
+    <image>temple_door</image>
+  </page>
+  <page>
+    <id>5</id>
+    <content></content>
+    <choice3Result></choice3Result>
+    <choice2Result></choice2Result>
+    <choice1Result></choice1Result>
+    <choice3></choice3>
+    <choice2></choice2>
+    <choice1></choice1>
+  </page>
+  <page>
+    <id>6</id>
+    <content></content>
+    <choice3Result></choice3Result>
+    <choice2Result></choice2Result>
+    <choice1Result></choice1Result>
+    <choice3></choice3>
+    <choice2></choice2>
+    <choice1></choice1>
+  </page>
+  <page>
+    <id>7</id>
+    <content></content>
+    <choice3Result></choice3Result>
+    <choice2Result></choice2Result>
+    <choice1Result></choice1Result>
+    <choice3></choice3>
+    <choice2></choice2>
+    <choice1></choice1>
+  </page>
+  <page>
+    <id>8</id>
+    <content></content>
+    <choice3Result></choice3Result>
+    <choice2Result></choice2Result>
+    <choice1Result></choice1Result>
+    <choice3></choice3>
+    <choice2></choice2>
+    <choice1></choice1>
+  </page>
+  <page>
+    <id>9</id>
+    <content></content>
+    <choice3Result></choice3Result>
+    <choice2Result></choice2Result>
+    <choice1Result></choice1Result>
+    <choice3></choice3>
+    <choice2></choice2>
+    <choice1></choice1>
+  </page>
+  <page>
+    <id>10</id>
+    <content></content>
+    <choice3Result></choice3Result>
+    <choice2Result></choice2Result>
+    <choice1Result></choice1Result>
+    <choice3></choice3>
+    <choice2></choice2>
+    <choice1></choice1>
+  </page>
+</book>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/masterRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFD"
+    tools:context=".ErielLauncher"
+    tools:ignore="HardcodedText"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="outsideOverlay"
+        android:foregroundGravity="fill">
+
+        <RelativeLayout
+            android:id="@+id/contentRelativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/pageImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Page Image"
+                android:scaleType="centerInside"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="false"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/contentTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pageImage"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="45dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                tools:ignore="HardcodedText"
+                android:text="CONTENT!" />
+
+            <TextView
+                android:id="@+id/errorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageCorner"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#AA0000"
+                android:textColorHint="#AA0000" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageCorner"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/corner" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/contentTxt"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="45dp"
+                android:paddingBottom="50dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.7"
+                    android:id="@+id/buttonLayout">
+
+                    <Button
+                        android:id="@+id/choice1Btn"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_vertical|center_horizontal|left"
+                        android:onClick="Choose"
+                        android:textColor="#000000"
+                        android:background="@drawable/green_button"
+                        android:text="CHOICE 1" />
+
+                    <Button
+                        android:id="@+id/choice2Btn"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/choice1Btn"
+                        android:layout_below="@id/choice1Btn"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_vertical|center_horizontal|left"
+                        android:onClick="Choose"
+                        android:textColor="#000000"
+                        android:background="@drawable/green_button"
+                        android:text="CHOICE 2 that's far too long and epic for only one line to contain it! No, really, it's simply waaaaaay too long! CHOICE 2 that's far too long and epic for only one line to contain it! No, really, it's simply waaaaaay too long! CHOICE 2 that's far too long and epic for only one line to contain it! No, really, it's simply waaaaaay too long! CHOICE 2 that's far too long and epic for only one line to contain it! No, really, it's simply waaaaaay too long! " />
+
+                    <Button
+                        android:id="@+id/choice3Btn"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/choice2Btn"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentTop="false"
+                        android:layout_below="@id/choice2Btn"
+                        android:gravity="center_vertical|center_horizontal|left"
+                        android:onClick="Choose"
+                        android:textColor="#000000"
+                        android:background="@drawable/green_button"
+                        android:text="CHOICE 3" />
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.3"></FrameLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/healthBarLay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/topBorder"
+            android:src="@drawable/back"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitStart" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:id="@+id/healthCover"
+            android:layout_alignRight="@+id/topBorder"
+            android:background="#FFFFFF"
+            android:layout_marginTop="22dp"
+            android:layout_marginRight="36dp" />
+
+        <TextView
+            android:id="@+id/cashTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="99G"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#010000"
+            android:textStyle="bold"
+            android:layout_weight="0.17"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="14dp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
