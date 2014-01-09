@@ -51,6 +51,7 @@ public final class Processor {
         BufferedReader in = new BufferedReader(new FileReader(new File(Launcher.directory + "/" + book.fileName)));
         String line = in.readLine();
         while (line != null) {
+            line = line.replaceAll("<!\\[CDATA\\[","");
             line = line.replaceAll("<content>","<content><![CDATA[");
             line = line.replaceAll("</content>","]]></content>");
             book.tempString = book.tempString + line;

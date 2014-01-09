@@ -24,16 +24,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48ab6f95-efa8-4886-b50c-102c7d7c0e06" name="Default" comment="">
-      <change type="DELETED" beforePath="X:\Quilxotic\Screenshot_2013-12-23-13-52-46.png" afterPath="" />
-      <change type="DELETED" beforePath="X:\Quilxotic\readme" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ca/sulli/quilxotic/Book.java" afterPath="$PROJECT_DIR$/src/ca/sulli/quilxotic/Book.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ca/sulli/quilxotic/ErielLauncher.java" afterPath="$PROJECT_DIR$/src/ca/sulli/quilxotic/ErielLauncher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Quilxotic Project.iml" afterPath="$PROJECT_DIR$/Quilxotic Project.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Quilxotic.iml" afterPath="$PROJECT_DIR$/Quilxotic.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ca/sulli/quilxotic/Reader.java" afterPath="$PROJECT_DIR$/src/ca/sulli/quilxotic/Reader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ca/sulli/quilxotic/XMLParser.java" afterPath="$PROJECT_DIR$/src/ca/sulli/quilxotic/XMLParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/content.xml" afterPath="$PROJECT_DIR$/assets/content.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/example.xml" afterPath="$PROJECT_DIR$/assets/example.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ca/sulli/quilxotic/Processor.java" afterPath="$PROJECT_DIR$/src/ca/sulli/quilxotic/Processor.java" />
     </list>
     <ignored path="Quilxotic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -140,19 +131,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XMLParser.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="XMLParser.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ca/sulli/quilxotic/XMLParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="0" selection-start="1884" selection-end="1884" vertical-scroll-proportion="0.33333334" vertical-offset="918" max-vertical-offset="4845">
+            <state line="81" column="30" selection-start="2120" selection-end="2120" vertical-scroll-proportion="-9.807693" vertical-offset="918" max-vertical-offset="4845">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Processor.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Processor.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ca/sulli/quilxotic/Processor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="29" selection-start="1047" selection-end="1047" vertical-scroll-proportion="0.0" vertical-offset="552" max-vertical-offset="1241">
+            <state line="53" column="55" selection-start="1365" selection-end="1365" vertical-scroll-proportion="0.6255507" vertical-offset="333" max-vertical-offset="1258">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#405#413#0" expanded="true" />
@@ -557,8 +548,8 @@
         <option value="$PROJECT_DIR$/src/ca/sulli/quilxotic/Reader.java" />
         <option value="$PROJECT_DIR$/src/ca/sulli/quilxotic/Book.java" />
         <option value="$PROJECT_DIR$/src/ca/sulli/quilxotic/XMLParser.java" />
-        <option value="$PROJECT_DIR$/src/ca/sulli/quilxotic/Processor.java" />
         <option value="$PROJECT_DIR$/assets/example.xml" />
+        <option value="$PROJECT_DIR$/src/ca/sulli/quilxotic/Processor.java" />
       </list>
     </option>
   </component>
@@ -897,7 +888,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26552463" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869378" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39828694" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39828694" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39828694" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1053,21 +1044,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ca/sulli/quilxotic/XMLParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="30" selection-start="2120" selection-end="2120" vertical-scroll-proportion="-9.807693" vertical-offset="918" max-vertical-offset="4845">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/sulli/quilxotic/Processor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="29" selection-start="1047" selection-end="1047" vertical-scroll-proportion="0.0" vertical-offset="552" max-vertical-offset="1241">
+        <state line="53" column="55" selection-start="1365" selection-end="1365" vertical-scroll-proportion="0.6255507" vertical-offset="333" max-vertical-offset="1258">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#405#413#0" expanded="true" />
             <element signature="e#1113#1121#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ca/sulli/quilxotic/XMLParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="1884" selection-end="1884" vertical-scroll-proportion="0.33333334" vertical-offset="918" max-vertical-offset="4845">
-          <folding />
         </state>
       </provider>
     </entry>
