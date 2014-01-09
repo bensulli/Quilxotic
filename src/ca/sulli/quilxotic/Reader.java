@@ -109,6 +109,18 @@ public class Reader extends Activity {
 
         book = Launcher.book;
         Initialize(); // Initial gruntwork
+
+
+        if(Processor.HTMLUsed(book))
+        {
+            book = Processor.ProcessHTML(book);
+        }
+        else
+        {
+            Validator.CheckTags(book);
+        }
+
+
         XMLParser parser = new XMLParser();
         book = parser.ParseBook(book);
 
@@ -430,8 +442,7 @@ public class Reader extends Activity {
         }
     }
 
-    public static void UpdateErrors(String newError)
-    {
+    public static void UpdateErrors(String newError)    {
         errorLog = errorLog.concat("\n" + newError);
         if(DEV_MODE)
         {
@@ -444,19 +455,16 @@ public class Reader extends Activity {
 
 // ********************
 // *** MEDIA PLAYER ***
-    private void PlayVO(String vo)
-    {
+    private void PlayVO(String vo)    {
         voPlayer = MediaPlayer.create(this, Uri.fromFile(new File(Launcher.directory + "/" + vo + ".ogg")));
         voPlayer.start();
     }
 
-    private void StopVO()
-    {
+    private void StopVO()    {
         voPlayer.stop();
     }
 
-    private void PlayMusic(String music)
-    {
+    private void PlayMusic(String music)    {
         musicPlayer = MediaPlayer.create(this, Uri.fromFile(new File(Launcher.directory + "/" + music + ".ogg")));
         musicPlayer.setLooping(true);
 
@@ -465,8 +473,7 @@ public class Reader extends Activity {
         musicPlayer.start();
     }
 
-    private void StopMusic()
-    {
+    private void StopMusic()    {
         musicPlayer.stop();
     }
 // ********************
@@ -474,8 +481,7 @@ public class Reader extends Activity {
 
 // ********************
 // *** LOGIC & FLOW ***
-	public void Die()
-    {
+	public void Die()    {
     	hpCover.getLayoutParams().width = 366;
     	cashText.setText("0");
     	String newImage = "epitaph";
@@ -493,8 +499,7 @@ public class Reader extends Activity {
 		
     }
 
-    public int FindPage(int destination)
-    {
+    public int FindPage(int destination)    {
 
         int returner = 0;
 
@@ -510,8 +515,7 @@ public class Reader extends Activity {
         return returner;
     }
 
-    public void Choose(View v)
-    {
+    public void Choose(View v)    {
 
         int destinationPage;
 

@@ -580,7 +580,6 @@ public class ErielLauncher extends Activity {
 
                 if(name.equals("page"))
     			{
-    				Log.e(null,"Found a new page!");
     				currentPage = new Page();
     				//AND THEN PARSE VALUES OF THIS CURRENTPAGE INTO PAGE OBJECT
     			}
@@ -637,10 +636,6 @@ public class ErielLauncher extends Activity {
 
                 else if (currentPage != null)
                 {
-                        Log.e(null, "Found something other than a page: " + name);
-
-
-
                     // BUILD NEW PAGE
                     if(name.equals("id"))
                     {
@@ -775,7 +770,6 @@ public class ErielLauncher extends Activity {
             if (name.equals("page") && currentPage != null)
             {
                 pages.add(currentPage);
-                Log.e(null,"Page " + pages.size() + " completed, adding to array.");
             }
             }
         eventType = parser.next();

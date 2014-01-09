@@ -1,0 +1,25 @@
+==== Before Full Release ====
+• Auto-add CDATA if HTML used
+• Preview book info like title and author on the Launcher screen before loading the book
+• Audio control to pause/mute audio while reading
+• Save/load mechanism to save your place in a book you’re reading
+• General crash fixes
+• Example book
+• Use HTML tag
+
+
+==== To Add Later ====
+• Support for hiding cash/health widgets if not used
+• Support for custom border images
+• Additional template borders for general use
+
+
+==== Pie in the Sky ====
+• Inventory & logic
+• Support for custom variables
+• Windows or Android app to create XML
+
+
+==== Error Handling ====
+• Config element isn't before pages
+• Parsing should fail with a toast error at the very least, ideally this would error out on "begin"

@@ -2,47 +2,37 @@
 <book>
   <config>
     <startPage>1</startPage>
+    <usesHTML>1</usesHTML>
   </config>
   <page>
     <id>1</id>
-    <image>header</image>
-    <content>Welcome to Quilxotic, the easiest way to create your own interactive fiction novels in they vein of Choose Your Own Adventure books, with the added inclusion of optional RPG elements like health and currency.
+    <image>header</image>&lt;content&gt;&lt;b&gt;Welcome to Quilxotic&lt;/b&gt;, the easiest way to create your own interactive fiction novels in they vein of &lt;i&gt;Choose Your Own Adventure&lt;/i&gt; books, with the added inclusion of optional RPG elements like health and currency.&lt;br&gt;&lt;br&gt;
 
-Creating your own novel is very easy. Simply find the "content.xml" file in the Quilxotic folder of your device's primary storage. This acts as both a template and the file you will update with your own content.
+Creating your own novel is very easy. Simply find the "content.xml" file in the Quilxotic folder of your device's primary storage. This acts as both a template and the file you will update with your own content.&lt;br&gt;&lt;br&gt;
 
-NOTE: Quilxotic is in a BETA phase at this time. While basic features have been implemented I expect some users to encounter issues, especially as the content being created becomes more complex. Please do not give a low rating if you encounter issues, instead contact me at quilxotic@sulli.ca and attach your content.xml file so I can debug and push an update! Thanks for your consideration!
+NOTE: Quilxotic is in development at this time. I expect some users to encounter issues, especially as the content being created becomes more complex. Please do not give a low rating if you encounter issues, instead contact me at quilxotic@sulli.ca and attach your content.xml file so I can debug and push an update! Thanks for your consideration!&lt;br&gt;&lt;br&gt;
 
-Quilxotic uses a simple XML-based page system. The content.xml file contains a series of pages, each of which have several attributes.
+Quilxotic uses a simple XML-based page system. The content.xml file contains a single &lt;b&gt;config&lt;/b&gt; element and a series of &lt;b&gt;page&lt;/b&gt; elements. The &lt;b&gt;config&lt;/b&gt; element must include a "startPage" which is the first page number that your book starts on. The &lt;b&gt;page&lt;/b&gt; elements can have the following elements:&lt;br&gt;&lt;br&gt;
 
-id: Think of this as the "page number". This is a unique identifier for the page and should never be repeated.
+id: Think of this as the "page number". This is a unique identifier for the page and should never be repeated.&lt;br&gt;&lt;br&gt;
 
-image: [Optional] This is the filename of the image you would like displayed at the top of this page. The file must be in PNG format, and do not include the extension in the XML. For instance, use "forest" and not "forest.png". PNG files should be added to the Quilxotic folder on your device's primary storage. Though the image will be resized to fit, I recommend 200px tall by 500px wide for best results.
+image: [Optional] This is the filename of the image you would like displayed at the top of this page. The file must be in PNG format, and do not include the extension in the XML. For instance, use "forest" and not "forest.png". PNG files should be added to the Quilxotic folder on your device's primary storage. Though the image will be resized to fit, I recommend 200px tall by 500px wide for best results.&lt;br&gt;&lt;br&gt;
 
-content: This is the text on the page. This can be as long as you like, but should always lead up to a choice for the player.
+content: This is the text on the page. This can be as long as you like, but should always lead up to a choice for the player.&lt;br&gt;&lt;br&gt;
 
-choice1-3: These are your three choices (the third is optional, simply do not include a third choice element and the button will not appear). This text will appear in the choice button at the bottom of your content.
+choice1-3: These are your three choices (the third is optional, simply do not include a third choice element and the button will not appear). This text will appear in the choice button at the bottom of your content.&lt;br&gt;&lt;br&gt;
 
-choice1-3result: These are the page ids that each choice will lead to. For instance, choice1 will take you to "page" id 3. Be very careful if you choose to create loops in your story!
+choice1-3result: These are the page ids that each choice will lead to. For instance, choice1 will take you to "page" id 3. Be very careful if you choose to create loops in your story!&lt;br&gt;&lt;br&gt;
 
-hp: [Optional] You can add a positive or negative number to add or subtract health from the player. If the player's health drops below 0, they will die (see deathMessage below).
+hp: [Optional] You can add a positive or negative number to add or subtract health from the player. If the player's health drops below 0, they will die (see deathMessage below).&lt;br&gt;&lt;br&gt;
 
-cash: You can add a positive or negative number to add or subtract cash from the player. If the player does not have enough cash to reach this page, the option on the prior page will be greyed out. You should include the cost of a choice in the choice text so it's clear to the reader why this option is disabled when they can't afford it.
+cash: You can add a positive or negative number to add or subtract cash from the player. If the player does not have enough cash to reach this page, the option on the prior page will be greyed out. You should include the cost of a choice in the choice text so it's clear to the reader why this option is disabled when they can't afford it.&lt;br&gt;&lt;br&gt;
 
-deathMessage: Since not all players will take the same route through your story, it's possible that some readers will die on a page and some won't, depending on their remaining health. The deathMessage allows you to specify the text that the user will see if they die upon reaching this page and taking the specified damage in the 'hp' element. This lets you custom-tailor the death message to something appropriate to the context.
+deathMessage: Since not all players will take the same route through your story, it's possible that some readers will die on a page and some won't, depending on their remaining health. The deathMessage allows you to specify the text that the user will see if they die upon reaching this page and taking the specified damage in the 'hp' element. This lets you custom-tailor the death message to something appropriate to the context.&lt;br&gt;&lt;br&gt;
 
-You must also include a "config" element (see the template for an example) that includes a 'startPage'. Different creators use different id numbering systems, so this allows you to start a story on id 1000 instead of id 1. This must be set for the content to be loaded correctle!
 
-If you run into any problems, visit http://www.sulli.ca/quilxotic for more information, or contact me at quilxotic@sulli.ca! I hope you enjoy this application!</content>
-    <choice1>This is where your first choice will go!</choice1>
-    <choice1Result>2</choice1Result>
-    <choice2>This is where your second choice will go!</choice2>
-    <choice2Result>2</choice2Result>
-    <choice3>This is where your optional third choice will go!</choice3>
-    <choice3Result>2</choice3Result>
-    <hp>0</hp>
-    <cash>0</cash>
-    <deathMessage>This is the first page, so it's pretty unlikely the player will have died here.</deathMessage>
-  </page>
+
+If you run into any problems, visit http://www.sulli.ca/quilxotic for more information, or contact me at quilxotic@sulli.ca! I hope you enjoy this application!&lt;/content&gt;<choice1>This is where your first choice will go!</choice1><choice1Result>2</choice1Result><choice2>This is where your second choice will go!</choice2><choice2Result>2</choice2Result><choice3>This is where your optional third choice will go!</choice3><choice3Result>2</choice3Result><hp>0</hp><cash>0</cash><deathMessage>This is the first page, so it's pretty unlikely the player will have died here.</deathMessage></page>
   <page>
     <id>2</id>
     <image>header</image>

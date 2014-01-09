@@ -11,6 +11,7 @@ import org.xmlpull.v1.XmlPullParserFactory;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.StringReader;
 import java.net.URI;
 import java.util.ArrayList;
 
@@ -34,18 +35,19 @@ public class XMLParser {
             parser = null;
         }
 
-        FileInputStream in_s;
+        StringReader in_s;
 
         try {
-            in_s = new FileInputStream(Launcher.directory + "/" + book.fileName);
-        } catch (IOException e2) {
+            in_s = new StringReader(book.tempString);
+        } catch (Exception e) {
             in_s = null;
-            e2.printStackTrace();
+            e.printStackTrace();
         }
 
         try {
             parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
-            parser.setInput(in_s, null);
+            parser.setInput(in_s);
+
         } catch (XmlPullParserException e1) {
             e1.printStackTrace();
         }
@@ -137,6 +139,14 @@ public class XMLParser {
                             book.usesCash = true;
                         else
                             book.usesCash = false;
+                    }
+                    else if(name.equals("usesHTML"))
+                    {
+                        String nextText = parser.nextText();
+                        if (nextText == "1")
+                            book.usesHTML = true;
+                        else
+                            book.usesHTML = false;
                     }
                     else if (currentPage != null)
                     {

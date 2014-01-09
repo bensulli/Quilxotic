@@ -14,6 +14,8 @@ public class Book {
     public boolean usesHP;
     public boolean usesCash;
     public String fileName;
+    public boolean usesHTML;
+    public String tempString;
     public List<Page> pages = new ArrayList<Page>();
 
 }
