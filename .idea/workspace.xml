@@ -24,12 +24,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48ab6f95-efa8-4886-b50c-102c7d7c0e06" name="Default" comment="">
-      <change type="DELETED" beforePath="X:\Quilxotic\src\ca\sulli\quilxotic\ErielLauncher.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ca/sulli/quilxotic/Launcher.java" afterPath="$PROJECT_DIR$/src/ca/sulli/quilxotic/Launcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ca/sulli/quilxotic/Reader.java" afterPath="$PROJECT_DIR$/src/ca/sulli/quilxotic/Reader.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ca/sulli/quilxotic/XMLParser.java" afterPath="$PROJECT_DIR$/src/ca/sulli/quilxotic/XMLParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/launcher.xml" afterPath="$PROJECT_DIR$/res/layout/launcher.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo.txt" afterPath="$PROJECT_DIR$/todo.txt" />
+      <change type="MOVED" beforePath="X:\Quilxotic\assets\example.xml" afterPath="$PROJECT_DIR$/assets/Info.xml" />
     </list>
     <ignored path="Quilxotic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,53 +81,6 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/ca/sulli/quilxotic/XMLParser.java" line="28" class="ca.sulli.quilxotic.XMLParser" package="ca.sulli.quilxotic">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/ca/sulli/quilxotic/Launcher.java" line="101" class="ca.sulli.quilxotic.Launcher$1" package="ca.sulli.quilxotic">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="&#13;&#13;JAVA" />
-        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/ca/sulli/quilxotic/XMLParser.java" line="37" class="ca.sulli.quilxotic.XMLParser" package="ca.sulli.quilxotic">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -144,7 +94,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="launcher.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="launcher.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/launcher.xml">
           <provider editor-type-id="text-editor">
             <state line="96" column="25" selection-start="3684" selection-end="3684" vertical-scroll-proportion="0.0" vertical-offset="1287" max-vertical-offset="2448">
@@ -159,25 +109,19 @@
       <file leaf-file-name="Launcher.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ca/sulli/quilxotic/Launcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="38" selection-start="3873" selection-end="3873" vertical-scroll-proportion="0.0" vertical-offset="1216" max-vertical-offset="2278">
-              <folding>
-                <element signature="method#CopyContent#0;class#Launcher#0" expanded="false" />
-              </folding>
+            <state line="101" column="0" selection-start="3526" selection-end="3526" vertical-scroll-proportion="0.0" vertical-offset="1199" max-vertical-offset="3094">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Reader.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Reader.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ca/sulli/quilxotic/Reader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="38" selection-start="3624" selection-end="3624" vertical-scroll-proportion="0.0" vertical-offset="693" max-vertical-offset="2550">
+            <state line="188" column="24" selection-start="4837" selection-end="4837" vertical-scroll-proportion="1.9900166" vertical-offset="1201" max-vertical-offset="3893">
               <folding>
                 <element signature="method#Initialize#0;class#Reader#0" expanded="false" />
                 <element signature="method#onCreateOptionsMenu#0;class#Reader#0" expanded="false" />
-                <element signature="method#onStop#0;class#Reader#0" expanded="false" />
-                <element signature="method#onRestart#0;class#Reader#0" expanded="false" />
-                <element signature="method#onPause#0;class#Reader#0" expanded="false" />
-                <element signature="method#onResume#0;class#Reader#0" expanded="false" />
                 <element signature="method#ValidateIDs#0;class#Reader#0" expanded="false" />
                 <element signature="method#UpdatePage#0;class#Reader#0" expanded="false" />
                 <element signature="method#CheckRequirements#0;class#Reader#0" expanded="false" />
@@ -190,15 +134,6 @@
                 <element signature="method#FindPage#0;class#Reader#0" expanded="false" />
                 <element signature="method#Choose#0;class#Reader#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="XMLParser.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ca/sulli/quilxotic/XMLParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="0" selection-start="2253" selection-end="2253" vertical-scroll-proportion="-6.5384617" vertical-offset="1071" max-vertical-offset="5202">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -610,9 +545,9 @@
         <option value="$PROJECT_DIR$/assets/example.xml" />
         <option value="$PROJECT_DIR$/src/ca/sulli/quilxotic/Processor.java" />
         <option value="$PROJECT_DIR$/src/ca/sulli/quilxotic/Reader.java" />
-        <option value="$PROJECT_DIR$/src/ca/sulli/quilxotic/XMLParser.java" />
-        <option value="$PROJECT_DIR$/src/ca/sulli/quilxotic/Launcher.java" />
         <option value="$PROJECT_DIR$/res/layout/launcher.xml" />
+        <option value="$PROJECT_DIR$/src/ca/sulli/quilxotic/Launcher.java" />
+        <option value="$PROJECT_DIR$/src/ca/sulli/quilxotic/XMLParser.java" />
       </list>
     </option>
   </component>
@@ -951,14 +886,14 @@
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35625" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26552463" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869378" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32869378" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39828694" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39828694" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3254818" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43576017" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43576017" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -993,16 +928,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/project.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="604" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="37" selection-start="459" selection-end="459" vertical-scroll-proportion="0.18722467" vertical-offset="0" max-vertical-offset="908" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="146" selection-end="146" vertical-scroll-proportion="0.14977974" vertical-offset="0" max-vertical-offset="908" />
@@ -1029,7 +954,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/example.xml">
+    <entry file="file://$PROJECT_DIR$/assets/Info.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="41" selection-start="1918" selection-end="1918" vertical-scroll-proportion="0.61376673" vertical-offset="121" max-vertical-offset="952">
           <folding />
@@ -1054,31 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ca/sulli/quilxotic/Reader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="38" selection-start="3624" selection-end="3624" vertical-scroll-proportion="0.0" vertical-offset="693" max-vertical-offset="2550">
-          <folding>
-            <element signature="method#Initialize#0;class#Reader#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#Reader#0" expanded="false" />
-            <element signature="method#onStop#0;class#Reader#0" expanded="false" />
-            <element signature="method#onRestart#0;class#Reader#0" expanded="false" />
-            <element signature="method#onPause#0;class#Reader#0" expanded="false" />
-            <element signature="method#onResume#0;class#Reader#0" expanded="false" />
-            <element signature="method#ValidateIDs#0;class#Reader#0" expanded="false" />
-            <element signature="method#UpdatePage#0;class#Reader#0" expanded="false" />
-            <element signature="method#CheckRequirements#0;class#Reader#0" expanded="false" />
-            <element signature="method#UpdateErrors#0;class#Reader#0" expanded="false" />
-            <element signature="method#PlayVO#0;class#Reader#0" expanded="false" />
-            <element signature="method#StopVO#0;class#Reader#0" expanded="false" />
-            <element signature="method#PlayMusic#0;class#Reader#0" expanded="false" />
-            <element signature="method#StopMusic#0;class#Reader#0" expanded="false" />
-            <element signature="method#Die#0;class#Reader#0" expanded="false" />
-            <element signature="method#FindPage#0;class#Reader#0" expanded="false" />
-            <element signature="method#Choose#0;class#Reader#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/java/lang/ClassLoader.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="30" selection-start="2418" selection-end="2418" vertical-scroll-proportion="0.0" vertical-offset="574" max-vertical-offset="1309">
@@ -1100,22 +1000,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ca/sulli/quilxotic/XMLParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="0" selection-start="2253" selection-end="2253" vertical-scroll-proportion="-6.5384617" vertical-offset="1071" max-vertical-offset="5202">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ca/sulli/quilxotic/Launcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="38" selection-start="3873" selection-end="3873" vertical-scroll-proportion="0.0" vertical-offset="1216" max-vertical-offset="2278">
-          <folding>
-            <element signature="method#CopyContent#0;class#Launcher#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/launcher.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
@@ -1123,6 +1007,55 @@
       <provider editor-type-id="text-editor">
         <state line="96" column="25" selection-start="3684" selection-end="3684" vertical-scroll-proportion="0.0" vertical-offset="1287" max-vertical-offset="2448">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/android/os/Handler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="0" selection-start="3379" selection-end="3379" vertical-scroll-proportion="0.79640716" vertical-offset="910" max-vertical-offset="1411">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ca/sulli/quilxotic/Launcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="0" selection-start="3526" selection-end="3526" vertical-scroll-proportion="0.0" vertical-offset="1199" max-vertical-offset="3094">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ca/sulli/quilxotic/XMLParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="83" selection-start="1298" selection-end="1298" vertical-scroll-proportion="1.2333333" vertical-offset="0" max-vertical-offset="5117">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/android/app/Activity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="19" selection-start="1966" selection-end="1966" vertical-scroll-proportion="0.33333334" vertical-offset="552" max-vertical-offset="7565">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ca/sulli/quilxotic/Reader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="188" column="24" selection-start="4837" selection-end="4837" vertical-scroll-proportion="1.9900166" vertical-offset="1201" max-vertical-offset="3893">
+          <folding>
+            <element signature="method#Initialize#0;class#Reader#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#Reader#0" expanded="false" />
+            <element signature="method#ValidateIDs#0;class#Reader#0" expanded="false" />
+            <element signature="method#UpdatePage#0;class#Reader#0" expanded="false" />
+            <element signature="method#CheckRequirements#0;class#Reader#0" expanded="false" />
+            <element signature="method#UpdateErrors#0;class#Reader#0" expanded="false" />
+            <element signature="method#PlayVO#0;class#Reader#0" expanded="false" />
+            <element signature="method#StopVO#0;class#Reader#0" expanded="false" />
+            <element signature="method#PlayMusic#0;class#Reader#0" expanded="false" />
+            <element signature="method#StopMusic#0;class#Reader#0" expanded="false" />
+            <element signature="method#Die#0;class#Reader#0" expanded="false" />
+            <element signature="method#FindPage#0;class#Reader#0" expanded="false" />
+            <element signature="method#Choose#0;class#Reader#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

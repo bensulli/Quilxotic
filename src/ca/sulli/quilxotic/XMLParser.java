@@ -112,7 +112,6 @@ public class XMLParser {
 
                     if(name.equals("page"))
                     {
-                        Log.e(null, "Found a new page!");
                         currentPage = new Page();
                         //AND THEN PARSE VALUES OF THIS CURRENTPAGE INTO PAGE OBJECT
                     }
@@ -171,10 +170,6 @@ public class XMLParser {
                     }
                     else if (currentPage != null)
                     {
-                        Log.e(null, "Found something other than a page: " + name);
-
-
-
                         // BUILD NEW PAGE
                         if(name.equals("id"))
                         {

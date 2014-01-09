@@ -126,13 +126,13 @@ public class Launcher extends Activity {
     private void CopyContent()
     {
 
-        File f = new File(getCacheDir()+"/example.xml");
+        File f = new File(getCacheDir()+"/Info.xml");
         if (f.exists())
             f.delete();
 
         if (!f.exists()) try {
 
-            InputStream is = getAssets().open("example.xml");
+            InputStream is = getAssets().open("Info.xml");
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
@@ -149,8 +149,8 @@ public class Launcher extends Activity {
             File data = Environment.getDataDirectory();
 
             if (sd.canWrite()) {
-                String originPath = "/data/ca.sulli.quilxotic/cache/example.xml";
-                String destPath = "Quilxotic/example.xml";
+                String originPath = "/data/ca.sulli.quilxotic/cache/Info.xml";
+                String destPath = "Quilxotic/Info.xml";
                 File currentXML = new File(data, originPath);
                 File backupXML = new File(sd, destPath);
 
