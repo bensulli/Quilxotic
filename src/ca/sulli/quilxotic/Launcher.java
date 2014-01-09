@@ -14,6 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -28,6 +29,7 @@ public class Launcher extends Activity {
     public static Book book;
     public static String chosenBook;
     public static boolean debug;
+    public boolean audioEnabled = false;
 
     /* FILE IO */
     public static File sdCard;
@@ -36,9 +38,14 @@ public class Launcher extends Activity {
     public static ArrayList<String> fileNameList;
 
     /* INTERFACE */
-    public Spinner bookSpinner;
-    public CheckBox debugCheck;
-    public Button beginBtn;
+    private Spinner bookSpinner;
+    private CheckBox debugCheck;
+    private CheckBox audioCheck;
+    private Button beginBtn;
+    private TextView titleText;
+    private TextView authorText;
+    private TextView emailText;
+    private TextView websiteText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,12 +56,19 @@ public class Launcher extends Activity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN); //Remove notification bar
 
         fileNameList = new ArrayList();
+        book = new Book();
 
         setContentView(R.layout.launcher);
 
         bookSpinner = (Spinner)findViewById(R.id.bookSpinner);
         debugCheck = (CheckBox)findViewById(R.id.debugCheck);
+        audioCheck = (CheckBox)findViewById(R.id.audioCheck);
         beginBtn = (Button)findViewById(R.id.beginBtn);
+
+        titleText = (TextView)findViewById(R.id.titleText);
+        authorText = (TextView)findViewById(R.id.authorText);
+        emailText = (TextView)findViewById(R.id.emailText);
+        websiteText = (TextView)findViewById(R.id.websiteText);
 
         sdCard = Environment.getExternalStorageDirectory();
         directory = new File(sdCard.getAbsolutePath() + "/Quilxotic");
@@ -84,6 +98,21 @@ public class Launcher extends Activity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 chosenBook = bookSpinner.getSelectedItem().toString();
+                book.fileName = chosenBook;
+                XMLParser parser = new XMLParser();
+                book = parser.ParseBook(book);
+
+                if(book.title != null)
+                    titleText.setText("Title: " + book.title);
+
+                if(book.title != null)
+                    authorText.setText("Author: " + book.author);
+
+                if(book.title != null)
+                    emailText.setText("Email: " + book.email);
+
+                if(book.title != null)
+                    websiteText.setText("Website: " + book.website);
             }
 
             @Override
@@ -147,8 +176,12 @@ public class Launcher extends Activity {
 
     public void OpenBookBtn(View v)
     {
-        book = new Book();
-        book.fileName = chosenBook;
+
+
+
+        if(audioCheck.isChecked())
+            audioEnabled = true;
+
         if (debugCheck.isChecked())
             debug = true;
         Intent myIntent = new Intent(Launcher.this, Reader.class);
@@ -157,6 +190,7 @@ public class Launcher extends Activity {
     }
 
 }
+
 
 
 

@@ -46,6 +46,7 @@ public class Reader extends Activity {
     public WebView contentView;
     public boolean suspended;
     private final static int MAX_VOLUME = 100;
+    public boolean audioEnabled;
 
 	/* INST GAME OBJECTS */
 	public TextView cashText;
@@ -108,6 +109,7 @@ public class Reader extends Activity {
         Intent intent = getIntent();
 
         book = Launcher.book;
+
         Initialize(); // Initial gruntwork
 
 
@@ -168,8 +170,9 @@ public class Reader extends Activity {
     @Override
     protected void onRestart() {
         super.onRestart();
+        if(audioEnabled)
 
-        if(suspended)
+            if(suspended)
             {
             if(wasPlayingMusic)
                 musicPlayer.start();
@@ -457,7 +460,9 @@ public class Reader extends Activity {
 // *** MEDIA PLAYER ***
     private void PlayVO(String vo)    {
         voPlayer = MediaPlayer.create(this, Uri.fromFile(new File(Launcher.directory + "/" + vo + ".ogg")));
-        voPlayer.start();
+
+        if(audioEnabled)
+            voPlayer.start();
     }
 
     private void StopVO()    {
@@ -470,7 +475,8 @@ public class Reader extends Activity {
 
         final float volume = (float) (1 - (Math.log(MAX_VOLUME - 80) / Math.log(MAX_VOLUME)));
         musicPlayer.setVolume(volume, volume);
-        musicPlayer.start();
+        if(audioEnabled)
+            musicPlayer.start();
     }
 
     private void StopMusic()    {

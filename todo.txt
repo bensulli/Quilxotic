@@ -1,11 +1,9 @@
 ==== Before Full Release ====
-• Auto-add CDATA if HTML used
-• Preview book info like title and author on the Launcher screen before loading the book
-• Audio control to pause/mute audio while reading
+• [DONE v1.4] Auto-add CDATA if HTML used
+• [DONE v1.4] Preview book info like title and author on the Launcher screen before loading the book
+• [DONE v1.4] Audio control to pause/mute audio while reading
 • Save/load mechanism to save your place in a book you’re reading
-• General crash fixes
 • Example book
-• Use HTML tag
 
 
 ==== To Add Later ====

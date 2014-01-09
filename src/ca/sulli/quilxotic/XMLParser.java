@@ -35,21 +35,42 @@ public class XMLParser {
             parser = null;
         }
 
-        StringReader in_s;
+        if(book.tempString == null)
+        {
+            FileInputStream in_s;
 
-        try {
-            in_s = new StringReader(book.tempString);
-        } catch (Exception e) {
-            in_s = null;
-            e.printStackTrace();
+            try {
+                in_s = new FileInputStream(Launcher.directory + "/" + book.fileName);
+            } catch (IOException e2) {
+                in_s = null;
+                e2.printStackTrace();
+            }
+
+            try {
+                parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
+                parser.setInput(in_s, null);
+            } catch (XmlPullParserException e1) {
+                e1.printStackTrace();
+            }
         }
+        else
+        {
+            StringReader in_s;
 
-        try {
-            parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
-            parser.setInput(in_s);
+            try {
+                in_s = new StringReader(book.tempString);
+            } catch (Exception e) {
+                in_s = null;
+                e.printStackTrace();
+            }
 
-        } catch (XmlPullParserException e1) {
-            e1.printStackTrace();
+            try {
+                parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
+                parser.setInput(in_s);
+
+            } catch (XmlPullParserException e1) {
+                e1.printStackTrace();
+            }
         }
 
         try {

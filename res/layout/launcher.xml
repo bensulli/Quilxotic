@@ -11,8 +11,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/splashImage"
         android:src="@drawable/header"
-        android:layout_marginTop="15dp"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -22,33 +22,118 @@
         android:id="@+id/chooseBookText"
         android:layout_below="@+id/splashImage"
         android:layout_alignLeft="@+id/bookSpinner"
-        android:layout_marginTop="15dp" />
+        android:layout_marginTop="15dp"
+        android:textSize="12dp" />
 
     <Spinner
-        android:layout_width="300dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:id="@+id/bookSpinner"
         android:layout_below="@+id/chooseBookText"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp" />
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp" />
 
-    <CheckBox
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Debug XML"
-        android:id="@+id/debugCheck"
-        android:layout_below="@+id/bookSpinner"
+        android:background="#EBEBEB"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp" />
+        android:layout_below="@+id/bookSpinner"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:id="@+id/bookInfoLayout"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Title: "
+            android:id="@+id/titleText"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Author: "
+            android:id="@+id/authorText"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="E-mail: "
+            android:id="@+id/emailText"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Website: "
+            android:id="@+id/websiteText"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/optionsLayout"
+        android:gravity="center"
+        android:layout_below="@+id/bookInfoLayout"
+        android:layout_alignParentLeft="true">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Audio"
+            android:id="@+id/audioCheck"
+            android:layout_alignParentLeft="false"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentTop="false"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/debugCheck"
+            android:layout_alignTop="@+id/debugCheck"
+            android:textSize="12dp"
+            android:checked="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Debug XML"
+            android:id="@+id/debugCheck"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:textSize="12dp" />
+    </RelativeLayout>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Begin"
+        android:text="Load"
         android:id="@+id/beginBtn"
-        android:layout_below="@+id/debugCheck"
+        android:onClick="OpenBookBtn"
+        android:layout_below="@+id/optionsLayout"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="23dp"
-        android:onClick="OpenBookBtn" />
+        android:layout_marginTop="15dp" />
 
 </RelativeLayout>
