@@ -47,6 +47,7 @@ public class Reader extends Activity {
     public boolean suspended;
     private final static int MAX_VOLUME = 100;
     public boolean audioEnabled;
+    private boolean loadSave;
 
 	/* INST GAME OBJECTS */
 	public TextView cashText;
@@ -109,6 +110,7 @@ public class Reader extends Activity {
         Intent intent = getIntent();
 
         book = Launcher.book;
+        loadSave = Launcher.loadSave;
 
         Initialize(); // Initial gruntwork
 
@@ -129,7 +131,17 @@ public class Reader extends Activity {
         if(Launcher.debug)
             DEV_MODE = true;
 
-        onPage = book.pages.get(FindPage(book.startPage));
+        if(loadSave)
+        {
+            onPage = book.pages.get(FindPage(Launcher.saveState.currentPage));
+            hp = Launcher.saveState.hp;
+            cash = Launcher.saveState.cash;
+        }
+        else
+        {
+            onPage = book.pages.get(FindPage(book.startPage));
+        }
+
         UpdatePage(onPage);
 
     }
@@ -228,8 +240,6 @@ public class Reader extends Activity {
 
         suspended = false;
     }
-
-
 // ********************
 
 // ********************
@@ -267,8 +277,15 @@ public class Reader extends Activity {
 	}
 
 	private void UpdatePage(Page onPage) { 
-		hp = hp + onPage.hp; // This is "+" because damage is expressed as a negative number in the XML
-		if (hp > 0)
+
+        if(!loadSave)
+        {
+            hp = hp + onPage.hp; // This is "+" because damage is expressed as a negative number in the XML
+            cash = cash + onPage.cash;
+        }
+
+
+        if (hp > 0)
 		{
             Resources r = getApplicationContext().getResources();
             int px = (int) TypedValue.applyDimension(
@@ -279,13 +296,9 @@ public class Reader extends Activity {
 
             double  healthCoverWidth = px * (100 - hp) * 0.01;
             hpCover.getLayoutParams().width = (int)healthCoverWidth;
-			cash = cash + onPage.cash;
 			cashText.setText(Integer.toString(cash) + "G");
-			
-	    	Log.e(null,"Updating layout...");
 	    	String contentString = onPage.content;
 	    	
-	    	//content.setText(contentString);
             contentView.loadData(contentString,"text/html",null);
 
 	    	if (CheckRequirements(onPage.choice1Result) == false) {
@@ -409,6 +422,11 @@ public class Reader extends Activity {
             else if (onPage.music == "0")
                 StopMusic();
         }
+
+
+        // Save Progress
+        SaveState saveState = new SaveState(onPage.id,hp,cash,book.fileName);
+        SaveLoad.Save(saveState);
 	}
 
     private boolean CheckRequirements(int choice) {

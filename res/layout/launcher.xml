@@ -126,14 +126,30 @@
             android:textSize="12dp" />
     </RelativeLayout>
 
-    <Button
+    <RelativeLayout
+        android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Load"
-        android:id="@+id/beginBtn"
-        android:onClick="OpenBookBtn"
-        android:layout_below="@+id/optionsLayout"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp" />
+        android:layout_below="@+id/optionsLayout"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New"
+            android:id="@+id/beginBtn"
+            android:onClick="OpenBookBtn"
+            android:layout_marginRight="35dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:id="@+id/continueBtn"
+            android:onClick="ContinueBookBtn"
+            android:enabled="false"
+            android:layout_toRightOf="@+id/beginBtn" />
+    </RelativeLayout>
 
 </RelativeLayout>

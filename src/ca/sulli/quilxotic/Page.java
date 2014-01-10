@@ -1,5 +1,7 @@
 package ca.sulli.quilxotic;
 
+import java.io.Serializable;
+
 public class Page {
 
 	public int id;

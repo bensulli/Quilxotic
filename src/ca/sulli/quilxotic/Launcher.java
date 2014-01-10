@@ -1,7 +1,8 @@
 package ca.sulli.quilxotic;
 
-
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
@@ -36,16 +37,19 @@ public class Launcher extends Activity {
     public static File directory;
     public static File[] fileList;
     public static ArrayList<String> fileNameList;
+    public boolean saveExists;
+    public static boolean loadSave = false;
+    public static SaveState saveState;
 
     /* INTERFACE */
     private Spinner bookSpinner;
     private CheckBox debugCheck;
     private CheckBox audioCheck;
-    private Button beginBtn;
     private TextView titleText;
     private TextView authorText;
     private TextView emailText;
     private TextView websiteText;
+    private Button continueBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +67,7 @@ public class Launcher extends Activity {
         bookSpinner = (Spinner)findViewById(R.id.bookSpinner);
         debugCheck = (CheckBox)findViewById(R.id.debugCheck);
         audioCheck = (CheckBox)findViewById(R.id.audioCheck);
-        beginBtn = (Button)findViewById(R.id.beginBtn);
+        continueBtn = (Button)findViewById(R.id.continueBtn);
 
         titleText = (TextView)findViewById(R.id.titleText);
         authorText = (TextView)findViewById(R.id.authorText);
@@ -113,11 +117,23 @@ public class Launcher extends Activity {
 
                 if(book.title != null)
                     websiteText.setText("Website: " + book.website);
+
+                if(SaveLoad.SaveExists(book.fileName))
+                {
+                    continueBtn.setEnabled(true);
+                    saveExists = true;
+                }
+                else
+                {
+                    continueBtn.setEnabled(false);
+                    saveExists = false;
+                }
+
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
-
+                continueBtn.setEnabled(false);
             }
         }); {
         }
@@ -176,8 +192,56 @@ public class Launcher extends Activity {
 
     public void OpenBookBtn(View v)
     {
+        if(saveExists)
+        {
 
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle("Overwrite?")
+                    .setMessage("A save for this book exists. Are you sure you want to overwrite it and start again?")
+                    .setIcon(android.R.drawable.ic_dialog_alert);
 
+            builder.setPositiveButton("Yes, start fresh!", new DialogInterface.OnClickListener()
+            {
+                public void onClick(DialogInterface dialog, int id){
+                    if(audioCheck.isChecked())
+                        audioEnabled = true;
+
+                    if (debugCheck.isChecked())
+                        debug = true;
+                    Intent myIntent = new Intent(Launcher.this, Reader.class);
+                    Launcher.this.startActivity(myIntent);
+                }
+            });
+
+            builder.setNegativeButton("No!", new DialogInterface.OnClickListener()
+            {
+                public void onClick(DialogInterface dialog, int id)
+                {
+
+                }
+            });
+
+            builder.show();
+
+        }
+        else
+        {
+            if(audioCheck.isChecked())
+                audioEnabled = true;
+
+            if (debugCheck.isChecked())
+                debug = true;
+            Intent myIntent = new Intent(Launcher.this, Reader.class);
+            Launcher.this.startActivity(myIntent);
+        }
+    }
+
+    public void ContinueBookBtn(View v)
+    {
+        saveState = SaveLoad.Load(book.fileName);
+
+        if(saveState != null)
+            loadSave = true;
 
         if(audioCheck.isChecked())
             audioEnabled = true;
@@ -185,7 +249,6 @@ public class Launcher extends Activity {
         if (debugCheck.isChecked())
             debug = true;
         Intent myIntent = new Intent(Launcher.this, Reader.class);
-        //myIntent.putExtra("book", book); //Optional parameters
         Launcher.this.startActivity(myIntent);
     }
 
