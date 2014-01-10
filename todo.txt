@@ -1,9 +1,10 @@
 ==== Before Full Release ====
-• [DONE v1.4] Auto-add CDATA if HTML used
+• [DONE v1.4] Save/load mechanism to save your place in a book you’re reading
 • [DONE v1.4] Preview book info like title and author on the Launcher screen before loading the book
-• [DONE v1.4] Audio control to pause/mute audio while reading
+• [DONE v1.4] Auto-add CDATA if HTML used (set "useHTML" to "1" in your config XML)
+• [DONE v1.4] Audio enable/disable option when loading your book
 • Example book
-• Save/load mechanism to save your place in a book you’re reading
+
 
 
 ==== To Add Later ====
